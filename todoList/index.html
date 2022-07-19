@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/ebe7817d95.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./index.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="task-input">
+        <i class="fa-solid fa-bars"></i>
+        <input type="text" placeholder="Add a new task" />
+      </div>
+      <div class="controls">
+        <div class="filters">
+          <span id="all" class="active">All</span>
+          <span id="pending">Pending</span>
+          <span id="completed">Completed</span>
+        </div>
+        <button class="clear-btn">Clear All</button>
+      </div>
+      <ul class="task-box">
+        <li class="task">
+          <label for="1">
+            <input type="checkbox" id="1" />
+            <p>Renew gym membership</p>
+          </label>
+          <div class="settings">
+            <i class="fa-solid fa-ellipsis"></i>
+            <ul class="task-menu">
+              <li><i class="fa-solid fa-pen"></i>Edit</li>
+              <li><i class="fa-solid fa-trash"></i></i>Delete</li>
+            </ul>
+          </div>
+        </li>
+        <li class="task">
+          <label for="1">
+            <input type="checkbox" id="1" />
+            <p>clean my room</p>
+          </label>
+          <div class="settings">
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+        </li>
+        <li class="task">
+          <label for="1">
+            <input type="checkbox" id="1" />
+            <p>study and walk around</p>
+          </label>
+          <div class="settings">
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
